@@ -1,0 +1,15 @@
+{
+  "solidity": "0.8.19",
+  "networks": {
+    "pharosDevnet": {
+      "url": "https://pharos-devnet.rpc.url", // Replace with actual Pharos Devnet RPC URL
+      "accounts": ["${PRIVATE_KEY}"] // Replace with your private key in .env file
+    }
+  },
+  "paths": {
+    "sources": "./contracts",
+    "tests": "./test",
+    "cache": "./cache",
+    "artifacts": "./artifacts"
+  }
+}
