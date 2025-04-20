@@ -44,3 +44,4 @@ Local courier businesses can use it for transparent tracking.
 Artists selling physical NFTs (prints, merch) can attach this for verifiable delivery.
 
 Buyers can verify if the seller actually shipped or faked it.
+![dPackChain](image.png)
