@@ -1,13 +1,13 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Package, Shield, Clock, Search, ArrowRight, Truck, BarChart3 } from "lucide-react"
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Package, Shield, Clock, Search, ArrowRight, Truck, BarChart3 } from "lucide-react";
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <header className="border-b">
-        <div className="container flex h-16 items-center justify-between px-4 md:px-6">
+        <div className="container max-w-screen-xl flex h-16 items-center justify-between px-4 md:px-8 lg:px-12 xl:px-16 mx-auto">
           <Link href="/" className="flex items-center gap-2">
             <Package className="h-6 w-6 text-teal-600" />
             <span className="text-xl font-bold">dPackChain</span>
@@ -38,7 +38,7 @@ export default function Home() {
       </header>
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-teal-50 to-white">
-          <div className="container px-4 md:px-6">
+          <div className="container max-w-screen-xl px-4 md:px-6 mx-auto">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
@@ -104,7 +104,7 @@ export default function Home() {
         </section>
 
         <section id="features" className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
+          <div className="container max-w-screen-xl px-4 md:px-6 mx-auto">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-teal-100 px-3 py-1 text-sm text-teal-700">Features</div>
@@ -143,7 +143,7 @@ export default function Home() {
         </section>
 
         <section id="how-it-works" className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
-          <div className="container px-4 md:px-6">
+          <div className="container max-w-screen-xl px-4 md:px-6 mx-auto">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-teal-100 px-3 py-1 text-sm text-teal-700">Process</div>
@@ -193,68 +193,9 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
-            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
-              <div className="flex flex-col justify-center space-y-4">
-                <div className="space-y-2">
-                  <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Ready to Get Started?</h2>
-                  <p className="max-w-[600px] text-gray-500 md:text-xl">
-                    Join the future of package tracking with our blockchain-powered solution. Register your first
-                    shipment today.
-                  </p>
-                </div>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Link href="/register-shipment">
-                    <Button size="lg" className="gap-2">
-                      Register Shipment <ArrowRight className="h-4 w-4" />
-                    </Button>
-                  </Link>
-                  <Link href="/dashboard">
-                    <Button size="lg" variant="outline">
-                      View Dashboard
-                    </Button>
-                  </Link>
-                </div>
-              </div>
-              <div className="flex justify-center">
-                <div className="relative w-full max-w-[500px] aspect-video">
-                  <div className="absolute inset-0 bg-gradient-to-r from-teal-200 to-teal-400 rounded-lg opacity-20 blur-xl"></div>
-                  <div className="relative bg-white p-6 rounded-lg shadow-lg border">
-                    <div className="space-y-4">
-                      <div className="flex items-center gap-2 text-teal-600">
-                        <Truck className="h-5 w-5" />
-                        <h3 className="font-semibold">Shipment Statistics</h3>
-                      </div>
-                      <div className="grid grid-cols-2 gap-4">
-                        <div className="rounded-lg border p-3">
-                          <div className="text-3xl font-bold text-teal-600">98%</div>
-                          <div className="text-sm text-gray-500">On-time Delivery</div>
-                        </div>
-                        <div className="rounded-lg border p-3">
-                          <div className="text-3xl font-bold text-teal-600">10k+</div>
-                          <div className="text-sm text-gray-500">Packages Tracked</div>
-                        </div>
-                        <div className="rounded-lg border p-3">
-                          <div className="text-3xl font-bold text-teal-600">24h</div>
-                          <div className="text-sm text-gray-500">Avg. Delivery Time</div>
-                        </div>
-                        <div className="rounded-lg border p-3">
-                          <div className="text-3xl font-bold text-teal-600">100%</div>
-                          <div className="text-sm text-gray-500">Transparency</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
       <footer className="border-t bg-gray-50">
-        <div className="container flex flex-col gap-6 py-8 md:flex-row md:items-center md:justify-between md:py-12 px-4 md:px-6">
+        <div className="container max-w-screen-xl flex flex-col gap-6 py-8 md:flex-row md:items-center md:justify-between md:py-12 px-4 md:px-6 mx-auto">
           <div className="flex flex-col gap-2">
             <Link href="/" className="flex items-center gap-2">
               <Package className="h-5 w-5 text-teal-600" />
@@ -276,5 +217,5 @@ export default function Home() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
